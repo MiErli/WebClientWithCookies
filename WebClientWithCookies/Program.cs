@@ -22,7 +22,7 @@ namespace WebClientWithCookies
                     Post(url, client);
             }
 
-            Console.WriteLine("Hit return to exit");
+            Console.WriteLine("Hit <ENTER> to exit");
             Console.ReadLine();
         }
 
