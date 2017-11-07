@@ -6,9 +6,7 @@ namespace WebClientWithCookies
     class Program
     {
         // Cookie-Merker:
-        private static string _cookies = string.Empty;
-
-
+        //private static string _cookies = string.Empty;
 
         static void Main(string[] args)
         {
@@ -29,7 +27,7 @@ namespace WebClientWithCookies
         private static void Post(string url, WebClientWithCookies client)
         {
             var uri = new Uri(url, UriKind.RelativeOrAbsolute);
-            client.Headers.Add("Cookie", _cookies);
+            //client.Headers.Add("Cookie", _cookies);
             Console.WriteLine(client.DownloadString(uri));
         }
 
